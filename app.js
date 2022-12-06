@@ -30,21 +30,20 @@ function main() {
 
   if (z == 0) {
     document.getElementById("main_display").innerHTML = "<img src='./yellow_car.avif' alt='yellow_car'>";
-    document.getElementById("car").style.display = "block";
-    console.log(number + "-" + messageC)
+    console.log(number + " - " + messageC)
   }
   else if (x == 0 && y == 0) {
-    console.log(number + "-" + messageA + " " + messageB);
+    console.log(number + " - " + messageA + " " + messageB);
     document.getElementById("main_display").innerHTML = messageA + " " + messageB;
     document.getElementById("main_display").style.color = "black";
     document.getElementById("main_display").classList.add("anim");
   } else if (x == 0) {
-    console.log(number + "-" + messageA);
+    console.log(number + " - " + messageA);
     document.getElementById("main_display").innerHTML = messageA;
     document.getElementById("main_display").style.color = "#00ff0d";
     document.getElementById("main_display").classList.remove("anim");
   } else if (y == 0) {
-    console.log(number + "-" + messageB);
+    console.log(number + " - " + messageB);
     document.getElementById("main_display").innerHTML = messageB;
     document.getElementById("main_display").style.color = "#00ff0d";
     document.getElementById("main_display").classList.remove("anim");
