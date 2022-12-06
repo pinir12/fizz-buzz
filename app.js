@@ -21,12 +21,13 @@ function main() {
   number = Math.floor(number)
   var x = number % 3;
   var y = number % 5;
+  var z = number % 150;
   var messageA = "FIZZ"
   var messageB = "BUZZ"
 
   hideShowButtons()
 
-  if (number == 150) {
+  if (z == 0) {
     document.getElementById("main_display").innerHTML = "<img src='./yellow_car.avif' alt='yellow_car'>";
     document.getElementById("car").style.display = "block";
   }
