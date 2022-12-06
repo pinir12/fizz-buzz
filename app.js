@@ -24,12 +24,14 @@ function main() {
   var z = number % 150;
   var messageA = "FIZZ"
   var messageB = "BUZZ"
+  var messageC = "Yellow Car!"
 
   hideShowButtons()
 
   if (z == 0) {
     document.getElementById("main_display").innerHTML = "<img src='./yellow_car.avif' alt='yellow_car'>";
     document.getElementById("car").style.display = "block";
+    console.log(number + "-" + messageC)
   }
   else if (x == 0 && y == 0) {
     console.log(number + "-" + messageA + " " + messageB);
